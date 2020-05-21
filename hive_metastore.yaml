@@ -1,0 +1,25 @@
+apiVersion: metering.openshift.io/v1
+kind: MeteringConfig
+metadata:
+  name: "operator-metering"
+spec:
+  hive:
+    spec:
+      metastore:
+        storage:
+          # Default is null, which means using the default storage class if it exists.
+          # If you wish to use a different storage class, specify it here
+          # class: "null" 
+          size: "5Gi"
+ # spec:
+ # hive:
+ #   spec:
+ #     metastore:
+ #       storage:
+ #         create: false
+ #     config:
+ #       db:
+ #         url: "jdbc:mysql://mysql.example.com:3306/hive_metastore"
+ #         driver: "com.mysql.jdbc.Driver"
+ #         username: "REPLACEME"
+ #         password: "REPLACEME"

@@ -15,3 +15,16 @@ spec:
 #  query: "cluster-cpu-capacity"
 #  schedule:
 #    period: "hourly" 
+
+
+#apiVersion: metering.openshift.io/v1
+#kind: Report
+#metadata:
+#  name: cluster-cpu-capacity-daily 
+#spec:
+#  query: "cluster-cpu-capacity" 
+#  inputs: 
+#  - name: ClusterCpuCapacityReportName
+#    value: cluster-cpu-capacity-hourly
+#  schedule:
+#    period: "daily"

@@ -1,0 +1,17 @@
+apiVersion: metering.openshift.io/v1
+kind: Report
+metadata:
+  name: pod-cpu-request-hourly
+spec:
+  query: "pod-cpu-request"
+  reportingStart: "2019-07-01T00:00:00Z"
+  reportingEnd: "2019-07-31T00:00:00Z"
+  
+#apiVersion: metering.openshift.io/v1
+#kind: Report
+#metadata:
+#  name: cluster-cpu-capacity-hourly
+#spec:
+#  query: "cluster-cpu-capacity"
+#  schedule:
+#    period: "hourly" 
